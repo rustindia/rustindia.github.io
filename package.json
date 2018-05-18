@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development  --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "repository": "git@github.com:vamshi9666/rustindia.github.io.git",
   "author": "vamshi9666 <vamshi123nimmakuri123@gmail.com>",
