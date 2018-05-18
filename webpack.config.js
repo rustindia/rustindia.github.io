@@ -19,12 +19,22 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+
+          }
+        ]
       }
     ]
   },
-  plugins: [
+    plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html'
+      template: "./index.html",
+      filename: "./index.html"
     })
   ]
 };
