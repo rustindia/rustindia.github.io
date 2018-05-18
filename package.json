@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development  --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d dist"
   },
   "repository": "git@github.com:vamshi9666/rustindia.github.io.git",
   "author": "vamshi9666 <vamshi123nimmakuri123@gmail.com>",
@@ -15,6 +17,8 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
+    "gh-pages": "^1.1.0",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
