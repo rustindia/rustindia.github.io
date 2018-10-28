@@ -1,15 +1,10 @@
-import React , {Component }from 'react';
-import Header from './compo/header'
-import Main from './compo/main-con'
-import event from './compo/event'
+import React from 'react';
+import Header from './compo/header';
 
-class App extends Component{
-    render(){
-        return(
-            <div>
-                <Header/>
-            </div>
-        );
-    }
-}
+const App = () => (
+    <div>
+        <Header/>
+    </div>
+);
+
 export default App;
