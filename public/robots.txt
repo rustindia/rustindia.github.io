@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://adidoks.netlify.com/sitemap.xml

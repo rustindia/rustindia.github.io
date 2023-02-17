@@ -7,8 +7,8 @@ title = "Rust India Community Page"
 lead = 'This is Rust Programming Language India Community website that has all the details to make your Rust journey enjoyable and accessible.'
 url = "/docs/getting-started/introduction/"
 url_button = "Get started"
-repo_version = "GitHub"
-repo_license = "Open-source"
+repo_version = ""
+repo_license = ""
 repo_url = "https://github.com/rustindia/rustindia.github.io"
 
 # Menu items
