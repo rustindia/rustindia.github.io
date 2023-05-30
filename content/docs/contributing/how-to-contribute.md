@@ -9,7 +9,7 @@ sort_by = "weight"
 template = "docs/page.html"
 
 [extra]
-lead = "Contribute to AdiDoks, improve documentation, or submit to showcase."
+lead = "Contribute to Rust India."
 toc = true
 top = false
 +++
