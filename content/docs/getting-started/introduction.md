@@ -1,6 +1,6 @@
 +++
 title = "Introduction"
-description = "AdiDoksA language empowering everyone to build reliable and efficient software."
+description = "A language empowering everyone to build reliable and efficient software."
 date = 2021-05-01T08:00:00+00:00
 updated = 2021-05-01T08:00:00+00:00
 draft = false
