@@ -83,7 +83,7 @@ library = "katex"  # options: "katex", "mathjax". default is "katex".
 [extra.open]
 enable = true
 # this image will be used as fallback if a page has no image of its own
-image = "doks.png"
+image = "rustindia.png"
 twitter_site = "rustlangin"
 twitter_creator = "rustlangin"
 facebook_publisher=""
@@ -93,7 +93,7 @@ og_locale = "en_US"
 ## JSON-LD
 [extra.schema]
 type = "Organization"
-logo = "logo-doks.png"
+logo = "rustindia.png"
 twitter = "https://twitter.com/rustlangin"
 linked_in = "https://www.linkedin.com/company/rust-india/"
 github = "https://github.com/rustindia"
