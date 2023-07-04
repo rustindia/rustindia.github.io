@@ -83,7 +83,7 @@ library = "katex"  # options: "katex", "mathjax". default is "katex".
 [extra.open]
 enable = true
 # this image will be used as fallback if a page has no image of its own
-image = "rustindia.png"
+image = "RustIndia-OG.png"
 twitter_site = "rustlangin"
 twitter_creator = "rustlangin"
 facebook_publisher=""
