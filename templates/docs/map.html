@@ -1,0 +1,76 @@
+{% extends "page.html" %}
+
+{% block body %}
+  {% set page_class = "docs single" %}
+{% endblock body %}
+
+{% block header %}
+  {# This value is matched by the config.extra.menu.main~url #}
+  {% set current_section = "docs" %}
+  {{ macros_header::header(current_section=current_section)}}
+{% endblock header %}
+
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col">
+        {% if page.extra.lead %}<p class="lead">{{ page.extra.lead | safe }}</p>{% endif %}
+        
+        {{ page.content | safe }}
+
+        {% if config.extra.edit_page %}
+        {{ macros_edit_page::docs_edit_page(current_path=current_path) }}
+        {% endif %}
+      </div>
+      <div class="col">
+
+        <div id="map" ></div>
+        <script>
+          
+          const map = L.map('map', {
+            dragging: false,
+            scrollWheelZoom: false
+          }).setView([20.5937, 78.9629], 5);
+
+          L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }).addTo(map);
+
+          var rustaceanIcon = L.icon({
+              iconUrl: '/rustacean-flat-happy.png',
+              iconSize: [45, 30], // size of the icon
+          });
+
+          const puneMarker = L.marker([18.5204, 73.8567], {icon: rustaceanIcon}).addTo(map);
+          puneMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Pune.</b>");
+          const keralaMarker = L.marker([10.1632, 76.6413], {icon: rustaceanIcon}).addTo(map);
+          keralaMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Kerala.</b>");
+          const bengaluruMarker = L.marker([12.9716, 77.5946], {icon: rustaceanIcon}).addTo(map);
+          bengaluruMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Bengaluru.</b>");
+          const hyderabadMarker = L.marker([17.3850, 78.4867], {icon: rustaceanIcon}).addTo(map);
+          hyderabadMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Hyderabad.</b>");
+          const delhiMarker = L.marker([28.7041, 77.1025], {icon: rustaceanIcon}).addTo(map);
+          delhiMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Delhi.");
+          const mumbaiaMarker = L.marker([19.0760, 72.8777], {icon: rustaceanIcon}).addTo(map);
+          mumbaiaMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Mumbai.</b>");
+          const chandigarhMarker = L.marker([30.7333, 76.7794], {icon: rustaceanIcon}).addTo(map);
+          chandigarhMarker.bindPopup("<b>Hello world!</b><br>Welcome to <b>Rust Chandigarh.</b>");
+        </script>
+        
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col mb-5">
+        {{ macros_navigation::docs_navigation(page=page, current_section=current_section) }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
