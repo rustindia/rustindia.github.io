@@ -1,0 +1,50 @@
+{% extends "section.html" %}
+
+{% block body %}
+  {% set page_class = "Community upcoming events" %}
+{% endblock body %}
+
+{% block header %}
+  {# This value is matched by the config.extra.menu.main->section #}
+  {% set current_section = "events" %}
+  {{ macros_header::header(current_section=current_section)}}
+{% endblock header %}
+
+{% block content %}
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xxl-14">
+        <article>
+          <h1 class="text-center">{{ section.title }}</h1>
+          <h3 class="text-center">{{ section.description }}</h3>
+        </article>
+        <article class="ifcontainer">
+          <style>
+            .ifcontainer {
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              padding-top: 56.25%;
+              /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            }
+          
+            /* Then style the iframe to fit in the container div with full height and width */
+            .responsive-iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+          <iframe scrolling="no" class="responsive-iframe"
+            src="https://rust-india-events-api.fermyon.app/static/events.html" title="rust-india-events" ></iframe>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

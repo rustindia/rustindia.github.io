@@ -24,24 +24,35 @@ section = "blog"
 url = "/blog/"
 weight = 20
 
+[[extra.menu.main]]
+name = "Events"
+section = "events"
+url = "/events/"
+weight = 20
+
 [[extra.list]]
 title = "Rust Resources"
 content = 'Get all the resources for you to get started from basics to advanced topics'
+url = "#"
 
 [[extra.list]]
 title = "Sub Communities"
 content = 'Information and PoC of communities near you to take part in and geek out on Rust together'
+url = "/docs/sub-communities/details"
 
 [[extra.list]]
 title = "Mentorship"
 content = "Rust Bridge program and more initiatives to pair new commers with experienced Rustaceans to get the much needed mentorship."
+url = "#"
 
 [[extra.list]]
 title = "Newsletter"
 content = "Timely news on what's happening in the Rust India ecosystem and get a glimpse of what are building"
+url = "#"
 
 [[extra.list]]
 title = "Events"
 content = "Get to know about meetups, events happening across India where you can take part in and exchange knowledge"
+url = "/events"
 
 +++
