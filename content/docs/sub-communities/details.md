@@ -11,7 +11,7 @@ toc = true
 top = false
 +++
 
-##### Want to add your community details? Please create a PR and [add the details to this table!](https://github.com/rustindia/rustindia.github.io/blob/master/content/docs/sub-communities/details.md) or reach out us for help. Maybe use [markdown table generator](https://tablesgenerator.com/markdown_tables#) for ease
+##### Want to add your community details? Please create a PR and [add the details to this table!](https://github.com/rustindia/rustindia.github.io/blob/master/content/docs/sub-communities/details.md) or reach out us for help. Maybe use [markdown table generator](https://tablesgenerator.com/markdown_tables#) for ease. Do checkout the latest [events conducted by these communities](/events).
 
 | Location          | Events                                           | Community Platform                                                           | Social Media Presence                                                                                                                      | Misc Links |
 | ----------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
